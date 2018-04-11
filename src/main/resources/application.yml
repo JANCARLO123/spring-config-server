@@ -14,4 +14,4 @@ spring:
           password:
           search-paths: config-repo
   application:
-    name: configserver
+    name: config-server-client
