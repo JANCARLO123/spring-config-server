@@ -1,16 +1,17 @@
 server:
   port: 8888
 
-
 spring:
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/spring-cloud-samples/config-repo
+                  #uri: ${HOME}/Documentos/desarrollo/IdeaProjects/spring-config-server
+          uri: ${user.home}/Documentos/desarrollo/IdeaProjects/spring-config-server
+          #uri: https://github.com/JANCARLO123/spring-config-server/
           clone-on-start: true
-  security:
-    user:
-      name:
-      password:
-          #uri: ${USERPROFILE}\\Desktop\\config-server-repo
+          username:
+          password:
+          search-paths: config-repo
+  application:
+    name: configserver
